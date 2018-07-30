@@ -1,6 +1,5 @@
 package com.tests.okhttp;
 
-import com.google.gson.Gson;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -12,13 +11,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class RestServiceTest {
 
     private final OkHttpClient client = new OkHttpClient();
-    private final Gson gson = new Gson();
-    private final String url = "https://jsonplaceholder.typicode.com/todos/1";
+    private static final String URL = "https://jsonplaceholder.typicode.com/todos/1";
 
     @Test
     public void serviceGetTest() {
         Request request = new Request.Builder()
-                .url(url)
+                .url(URL)
                 .header("Content-Type", "application/json")
                 .build();
         Response response = null;
