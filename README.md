@@ -16,7 +16,7 @@ Add the following to your dependencies:
 ```
 
 # sample rest api service
-        In this project I am using a sample rest api service : https://jsonplaceholder.typicode.com/todos/1
+        In this project I am using a sample rest api service : https://jsonplaceholder.typicode.com/
         
 
 
